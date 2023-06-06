@@ -1,0 +1,182 @@
+/* ==========
+
+-SPACING
+2 / 4 / 8 / 12 / 16 / 24 / *2 / 48 / 64 / 80 / 96 / 128 
+
+-LINE HEIGHT
+default:  1
+heading:  1.2
+desc:     1.5
+
+-FONT WEIGHT
+default:  400
+medium:   500
+bold:     700
+
+-FONT SIZE
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 
+
+-COLOR
+primary:  #20c997
+tints:    #d2f4ea
+shades:   #10654c
+accents:
+greys:    #555  #333  
+
+-SHADOWS
+
+-BORDER RADIUS
+default:  1rem
+
+-WHITESPACE
+
+
+========== */
+
+/* Goblal Setting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0.8rem rgb(16, 101, 76, 0.5);
+}
+
+/* General */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all 0.2s;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.link:visited,
+.link:link {
+  display: inline-block;
+  color: #20c997;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.5rem;
+}
+
+.link:hover,
+.link:active {
+  color: #10654c;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2em !important;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 8rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.h1,
+.h2,
+.h3 {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.1rem;
+}
+
+.h1 {
+  font-size: 5.2rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.h1-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.h2 {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+
+.h2-desc {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #10654c;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
